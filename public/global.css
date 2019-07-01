@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	position: relative;
+}
+
+body {
+	background: #222;
+	color: #eee;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+a {
+	color: cornflowerblue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: cornflowerblue;
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: 1.25rem;
+	padding: .5em 1em;
+	margin: 0 .5em;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+}
+	input[type=checkbox], input[type=checkbox]:checked {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+	input[type=radio] {
+		width: 1rem;
+		height: 1rem;
+	}
+
+input:disabled {
+	color: #ccc;
+}
+
+input[type="range"] {
+	height: 0;
+}
+
+button {
+	background-color: cornflowerblue;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+}
+
+button:disabled {
+	background-color: #aaa;
+	cursor: not-allowed;
+}
+
+button:active {
+	background-color: #79a3f1;
+}
+
+button:focus {
+	border-color: #aaa;
+}
+
+@media screen and (max-width: 900px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 567px) {
+	html {
+		font-size: 10px;
+	}
+}
